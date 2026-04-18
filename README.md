@@ -1,6 +1,6 @@
 # Timarh’s Cuisines
 
-A premium, mobile-responsive web platform for **Timarh’s Cuisines**, showcasing luxury artisanal pastries, bespoke cakes, and gourmet catering services. This project features a modern "Glassmorphism" design aesthetic and a seamless user experience across all devices.
+The official web platform for Timarh’s Cuisines. A premium, mobile-responsive landing page showcasing luxury artisanal pastries, bespoke cakes, and gourmet catering services with a modern Glassmorphism UI.
 
 ## ✨ Features
 
