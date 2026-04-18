@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gallery | Timarh’s Cuisines</title>
+  <meta name="description" content="See Timarh’s Cuisines in action: luxury cakes, pastries, donuts, samosas, and meat pies beautifully crafted and styled.">
+  <meta name="keywords" content="Gallery, Pastries, Cakes, Donuts, Samosas, Meat Pies, Luxury Desserts, Timarh Cuisines">
+  <meta name="author" content="Fatima Ibrahim | Timarh’s Cuisines">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gallery | Timarh’s Cuisines">
+  <meta property="og:description" content="Luxury cakes, pastries, donuts, samosas, and meat pies beautifully crafted.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://timarhs-cuisines.netlify.app/gallery.html">
+  <meta property="og:image" content="placeholder-og-image.jpg">
+  <meta property="og:site_name" content="Timarh’s Cuisines">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery | Timarh’s Cuisines">
+  <meta name="twitter:description" content="Luxury cakes, pastries, donuts, samosas, and meat pies beautifully crafted.">
+  <meta name="twitter:image" content="placeholder-og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-body-glass gallery-theme">
+
+<header>
+  <nav class="navbar glass">
+    <img src="logo.jpg" class="logo-brand" alt="Logo">
+    <div class="nav-icons">
+      <a href="home.html" title="Home"><i class="fas fa-house"></i></a>
+      <a href="about.html" title="About"><i class="fas fa-circle-info"></i></a>
+      <a href="menu.html" title="Menu"><i class="fas fa-utensils"></i></a>
+      <a href="gallery.html" title="Gallery"><i class="fas fa-images"></i></a>
+      <a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a>
+    </div>
+    <button class="hamburger">☰</button>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="gallery-section glass">
+  <h1>Gallery</h1>
+  <p class="text-center muted">A glimpse into our kitchen craft—freshly made and styled to perfection.</p>
+
+  <!-- Gallery Search -->
+  <div class="gallery-search" style="text-align: center; margin-bottom: var(--space-3);">
+    <input type="text" id="gallery-search" placeholder="Search gallery items..." style="padding: 0.75rem; border-radius: var(--r-sm); border: 1px solid rgba(0,0,0,0.06); width: 100%; max-width: 300px; background: rgba(255,255,255,0.8);">
+  </div>
+
+  <!-- Gallery Filters -->
+  <div class="gallery-filters btn-group text-center" role="group" aria-label="Filter gallery by category">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="cakes">Cakes</button>
+    <button data-filter="pastries">Pastries</button>
+    <button data-filter="savouries">Savouries</button>
+    <button data-filter="specials">Specials</button>
+  </div>
+
+  <!-- Masonry-like Grid -->
+  <div class="gallery-grid staggered-reveal">
+    <figure data-category="cakes">
+      <div class="image-wrapper">
+      <div class="category-tag">Cakes</div>
+      <img src="placeholder11.jpg" alt="Signature Cake">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Signature Chocolate Cake</figcaption>
+    </figure>
+    
+    <!-- Example of a 'Story' or 'Behind the Scenes' Item -->
+    <figure data-category="specials" class="gallery-story">
+      <div class="glass story-card">
+        <i class="fas fa-video icon-box" style="font-size: 1.5rem;"></i>
+        <h4>The Process</h4>
+        <p>24-hour slow fermentation for the perfect dough.</p>
+      </div>
+    </figure>
+
+    <figure data-category="savouries">
+      <div class="image-wrapper">
+      <div class="category-tag">Savouries</div>
+      <img src="placeholder6.jpg" alt="Meat Pie">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Flaky Meat Pie</figcaption>
+    </figure>
+    <figure data-category="savouries">
+      <div class="image-wrapper">
+      <div class="category-tag">Savouries</div>
+      <img src="placeholder12.jpg" alt="Samosa">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Spiced Samosas</figcaption>
+    </figure>
+    <figure data-category="pastries">
+      <div class="image-wrapper">
+      <div class="category-tag">Pastries</div>
+      <img src="placeholder1.jpg" alt="Pastry Display">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Pastry Display</figcaption>
+    </figure>
+    <figure data-category="pastries">
+      <div class="image-wrapper">
+      <div class="category-tag">Pastries</div>
+      <img src="placeholder4.jpg" alt="Assorted Treats">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Assorted Treats</figcaption>
+    </figure>
+    <figure data-category="cakes">
+      <div class="image-wrapper">
+      <div class="category-tag">Cakes</div>
+      <img src="placeholder10.jpg" alt="Vanilla Cake with Berries">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Vanilla Cake with Berries</figcaption>
+    </figure>
+    <figure data-category="pastries">
+      <div class="image-wrapper">
+      <div class="category-tag">Pastries</div>
+      <img src="placeholder3.jpg" alt="Donuts">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Glazed Donuts</figcaption>
+    </figure>
+    <figure data-category="specials">
+      <div class="image-wrapper">
+      <div class="category-tag">Specials</div>
+      <img src="placeholder2.jpg" alt="Chef's Special Dessert">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Chef's Special Dessert</figcaption>
+    </figure>
+    <figure data-category="cakes">
+      <div class="image-wrapper">
+      <div class="category-tag">Cakes</div>
+      <img src="placeholder5.jpg" alt="Layered Cake">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Layered Celebration Cake</figcaption>
+    </figure>
+    <figure data-category="savouries">
+      <div class="image-wrapper">
+      <div class="category-tag">Savouries</div>
+      <img src="placeholder7.jpg" alt="Savory Platter">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Savoury Party Platter</figcaption>
+    </figure>
+    <figure data-category="pastries">
+      <div class="image-wrapper">
+      <div class="category-tag">Pastries</div>
+      <img src="placeholder9.jpg" alt="Croissants">
+      <div class="view-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <figcaption class="text-center muted">Buttery Croissants</figcaption>
+    </figure>
+  </div>
+
+  <p class="text-center muted" style="margin-top:1rem;">Tap any image to view larger.</p>
+</section>
+
+<footer class="interactive-footer" role="contentinfo" aria-label="Site footer">
+  <div class="footer-inner">
+    <!-- Column 1: Brand -->
+    <div class="footer-col brand-col">
+      <img src="logo.jpg" class="footer-logo" alt="Timarh's Cuisines logo">
+      <p class="footer-description">Crafting luxury artisanal pastries and bespoke cakes since 2019. We believe in the magic of handmade indulgence.</p>
+      <div class="footer-social" aria-label="Social links">
+        <a href="https://www.instagram.com/invites/contact/?igsh=1eicpa2mt61rb&utm_content=n9icaut" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@pt_timarh" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100016958701906" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/fatima-ibrahim-6bba03352" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Navigation -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Explore</h4>
+      <ul class="footer-nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="menu.html">The Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Cuisine -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Specialties</h4>
+      <ul class="footer-nav-list">
+        <li><a href="menu.html">Custom Cakes</a></li>
+        <li><a href="menu.html">Artisan Donuts</a></li>
+        <li><a href="menu.html">Savory Samosas</a></li>
+        <li><a href="menu.html">Meat Pies</a></li>
+        <li><a href="menu.html">Catering Services</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact & Hours -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Connect</h4>
+      <p>Founder: <strong>Fatima Ibrahim</strong></p>
+      <p>WhatsApp: <a href="https://wa.me/2348104706237">08104706237</a></p>
+      <p>Email: <a href="mailto:Fibrahim1810@gmail.com">Fibrahim1810@gmail.com</a></p>
+      <div class="opening-hours">
+        <h4 class="footer-heading small">Opening Hours</h4>
+        <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+        <p>Sunday: Pre-orders Only</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <small>© <span id="year"></span> Timarh’s Cuisines. All rights reserved.</small>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

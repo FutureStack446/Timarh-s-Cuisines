@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Menu | Timarh’s Cuisines</title>
+  <meta name="description" content="Explore Timarh’s Cuisines menu: luxury cakes, pastries, donuts, samosas, and meat pies crafted to perfection.">
+  <meta name="keywords" content="Menu, Pastries, Cakes, Donuts, Samosas, Meat Pies, Luxury Desserts, Catering">
+  <meta name="author" content="Fatima Ibrahim | Timarh’s Cuisines">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Menu | Timarh’s Cuisines">
+  <meta property="og:description" content="Explore our luxury cakes, pastries, donuts, samosas, and meat pies menu.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://timarhs-cuisines.netlify.app/menu.html">
+  <meta property="og:image" content="placeholder-og-image.jpg">
+  <meta property="og:site_name" content="Timarh’s Cuisines">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menu | Timarh’s Cuisines">
+  <meta name="twitter:description" content="Explore our luxury cakes, pastries, donuts, samosas, and meat pies menu.">
+  <meta name="twitter:image" content="placeholder-og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-body-glass">
+
+<header>
+  <nav class="navbar glass">
+    <img src="logo.jpg" class="logo-brand" alt="Logo">
+    <div class="nav-icons">
+      <a href="home.html" title="Home"><i class="fas fa-house"></i></a>
+      <a href="about.html" title="About"><i class="fas fa-circle-info"></i></a>
+      <a href="menu.html" title="Menu"><i class="fas fa-utensils"></i></a>
+      <a href="gallery.html" title="Gallery"><i class="fas fa-images"></i></a>
+      <a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a>
+    </div>
+    <button class="hamburger">☰</button>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="menu-section glass">
+  <h1>Our Delicious Menu</h1>
+  <p class="text-center muted">Explore our curated selection of cakes, donuts, meat pies, and samosas. Freshly made to order.</p>
+  <div class="menu-search" style="text-align: center; margin-bottom: var(--space-3);">
+    <input type="text" id="menu-search" placeholder="Search menu items..." style="padding: 0.75rem; border-radius: var(--r-sm); border: 1px solid rgba(0,0,0,0.06); width: 100%; max-width: 300px;">
+  </div>
+  <div class="menu-filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="cakes">Cakes</button>
+    <button data-filter="donuts">Donuts</button>
+    <button data-filter="meatpies">Meat Pies</button>
+    <button data-filter="samosas">Samosas</button>
+  </div>
+
+  <div class="menu-grid">
+    <div class="menu-card cakes">
+      <div class="card-tag">SIGNATURE</div>
+      <img src="placeholder2.jpg" alt="Chocolate Cake" loading="lazy">
+      <h3>Chocolate Cake</h3>
+      <p class="muted">Silky ganache, rich cocoa layers.</p>
+      <div class="flavor-palette"><span>Rich</span><span>Dark</span><span>Moist</span></div>
+      <p class="price" style="font-weight: bold; color: var(--brand);">₦15,000</p>
+      <p class="pairing-note">Pair with: <em>Cold Milk</em></p>
+      <a href="https://wa.me/2348104706237?text=I%20want%20to%20order%20Chocolate%20Cake" class="btn-glow">Order Now</a>
+    </div>
+    <div class="menu-card donuts">
+      <div class="card-tag" style="background: #fbbf24;">DAILY FRESH</div>
+      <img src="placeholder9.jpg" alt="Glazed Donut" loading="lazy">
+      <h3>Glazed Donut</h3>
+      <p class="muted">Classic glaze with a soft, airy bite.</p>
+      <p class="price" style="font-weight: bold; color: var(--brand);">₦500</p>
+      <a href="https://wa.me/2348104706237?text=I%20want%20to%20order%20Glazed%20Donut" class="btn-glow">Order Now</a>
+    </div>
+    <div class="menu-card meatpies">
+      <img src="placeholder6.jpg" alt="Classic Meat Pie" loading="lazy">
+      <h3>Classic Meat Pie</h3>
+      <p class="muted">Buttery crust with seasoned filling.</p>
+      <p class="price" style="font-weight: bold; color: var(--brand);">₦1,000</p>
+      <a href="https://wa.me/2348104706237?text=I%20want%20to%20order%20Classic%20Meat%20Pie" class="btn-glow">Order Now</a>
+    </div>
+    <div class="menu-card samosas">
+      <img src="placeholder12.jpg" alt="Spicy Samosa" loading="lazy">
+      <h3>Spicy Samosa</h3>
+      <p class="muted">Crisp shell, bold and aromatic spices.</p>
+      <p class="price" style="font-weight: bold; color: var(--brand);">₦300</p>
+      <a href="https://wa.me/2348104706237?text=I%20want%20to%20order%20Spicy%20Samosa" class="btn-glow">Order Now</a>
+    </div>
+    <div class="menu-card cakes">
+      <img src="placeholder10.jpg" alt="Red Velvet Cake" loading="lazy">
+      <h3>Red Velvet</h3>
+      <p class="muted">Classic crimson layers with cream cheese frosting.</p>
+      <p class="price" style="font-weight: bold; color: var(--brand);">₦16,500</p>
+      <a href="https://wa.me/2348104706237?text=I%20want%20to%20order%20Red%20Velvet%20Cake" class="btn-glow">Order Now</a>
+    </div>
+    <div class="menu-card meatpies">
+      <img src="placeholder1.jpg" alt="Chicken Pie" loading="lazy">
+      <h3>Creamy Chicken Pie</h3>
+      <p class="muted">Tender chicken and veggies in a white sauce.</p>
+      <p class="price" style="font-weight: bold; color: var(--brand);">₦1,200</p>
+      <a href="https://wa.me/2348104706237?text=I%20want%20to%20order%20Chicken%20Pie" class="btn-glow">Order Now</a>
+    </div>
+  </div>
+
+  <!-- New Section: Build Your Own -->
+  <div class="section container glass text-center" style="margin-top: var(--space-5);">
+    <span class="hero-subtitle" style="color: var(--brand);">BESPOKE SERVICE</span>
+    <h2>Build Your Custom Cake</h2>
+    <p class="muted">Choose your base, frosting, and premium toppings for a one-of-a-kind creation.</p>
+    <div class="flex-center" style="margin-top: var(--space-4);">
+      <a href="contact.html" class="btn-outline">Start Consultation</a>
+      <button id="size-guide-btn" class="btn-outline">View Size Guide</button>
+    </div>
+  </div>
+
+  <div class="grid container" style="margin-top: var(--space-4);">
+    <div class="glass">
+      <h3>Bulk & Events</h3>
+      <p>Hosting an event? We offer customizable packages for weddings, birthdays, and corporate gatherings.</p>
+    </div>
+    <div class="glass">
+      <h3>Special Orders</h3>
+      <p>Need a unique design or dietary preference? Tell us what you need—we’ll craft it for you.</p>
+    </div>
+  </div>
+
+  <!-- Testimonials Slider -->
+  <div class="testimonials-slider section" style="margin-top: var(--space-5);">
+    <h2 class="text-center">What Our Clients Say</h2>
+    <div class="slider-wrapper">
+      <div class="testimonial-slide active">
+        <p>"The best meat pie I have ever tasted in Kano. The crust is simply divine."</p>
+        <small>— Dr. Aderemi</small>
+      </div>
+      <div class="testimonial-slide">
+        <p>"The cake was the showstopper of our event. Moist, elegant, and beyond delicious."</p>
+        <small>— Aisha, Abuja</small>
+      </div>
+      <div class="testimonial-slide">
+        <p>"Their donuts are addictive! Soft inside, slight crunch outside, perfect balance."</p>
+        <small>— Daniel, Kaduna</small>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- Size Guide Modal -->
+  <div id="size-guide-modal" class="modal">
+    <div class="modal-content glass-premium">
+      <span class="close-modal">&times;</span>
+      <h2 class="text-center">Cake Size Guide</h2>
+      <p class="text-center muted">Finding the perfect size for your celebration.</p>
+      <div class="size-grid" style="margin-top: var(--space-4);">
+        <div class="size-item">
+          <i class="fas fa-cake-candles" style="font-size: 1.5rem;"></i>
+          <h4>6" Mini</h4>
+          <p>Serves 8-12</p>
+          <small>Perfect for intimate gatherings.</small>
+        </div>
+        <div class="size-item">
+          <i class="fas fa-cake-candles" style="font-size: 2rem;"></i>
+          <h4>8" Standard</h4>
+          <p>Serves 15-20</p>
+          <small>Our most popular party size.</small>
+        </div>
+        <div class="size-item">
+          <i class="fas fa-cake-candles" style="font-size: 2.5rem;"></i>
+          <h4>10" Large</h4>
+          <p>Serves 30-40</p>
+          <small>Great for large celebrations.</small>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: var(--space-4);">
+        <p class="muted"><em>Note: Serving sizes are approximate based on party slices. For tiered cakes, please consult with us directly.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="interactive-footer" role="contentinfo" aria-label="Site footer">
+  <div class="footer-inner">
+    <!-- Column 1: Brand -->
+    <div class="footer-col brand-col">
+      <img src="logo.jpg" class="footer-logo" alt="Timarh's Cuisines logo">
+      <p class="footer-description">Crafting luxury artisanal pastries and bespoke cakes since 2019. We believe in the magic of handmade indulgence.</p>
+      <div class="footer-social" aria-label="Social links">
+        <a href="https://www.instagram.com/invites/contact/?igsh=1eicpa2mt61rb&utm_content=n9icaut" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@pt_timarh" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100016958701906" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/fatima-ibrahim-6bba03352" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Navigation -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Explore</h4>
+      <ul class="footer-nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="menu.html">The Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Cuisine -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Specialties</h4>
+      <ul class="footer-nav-list">
+        <li><a href="menu.html">Custom Cakes</a></li>
+        <li><a href="menu.html">Artisan Donuts</a></li>
+        <li><a href="menu.html">Savory Samosas</a></li>
+        <li><a href="menu.html">Meat Pies</a></li>
+        <li><a href="menu.html">Catering Services</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact & Hours -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Connect</h4>
+      <p>Founder: <strong>Fatima Ibrahim</strong></p>
+      <p>WhatsApp: <a href="https://wa.me/2348104706237">08104706237</a></p>
+      <p>Email: <a href="mailto:Fibrahim1810@gmail.com">Fibrahim1810@gmail.com</a></p>
+      <div class="opening-hours">
+        <h4 class="footer-heading small">Opening Hours</h4>
+        <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+        <p>Sunday: Pre-orders Only</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <small>© <span id="year"></span> Timarh’s Cuisines. All rights reserved.</small>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

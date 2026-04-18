@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Timarh’s Cuisines</title>
+  <meta name="description" content="Get in touch with Timarh’s Cuisines. Contact us via email, WhatsApp, or visit us for luxury pastries, cakes, donuts, samosas, and catering.">
+  <meta name="keywords" content="Contact, Pastries, Cakes, Donuts, Samosas, Meat Pies, Catering, Luxury Desserts">
+  <meta name="author" content="Fatima Ibrahim | Timarh’s Cuisines">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact | Timarh’s Cuisines">
+  <meta property="og:description" content="Contact Timarh’s Cuisines via email or WhatsApp for luxury pastries, cakes, donuts, and catering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://timarhs-cuisines.netlify.app/contact.html">
+  <meta property="og:image" content="placeholder-og-image.jpg">
+  <meta property="og:site_name" content="Timarh’s Cuisines">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact | Timarh’s Cuisines">
+  <meta name="twitter:description" content="Contact Timarh’s Cuisines via email or WhatsApp for luxury pastries, cakes, donuts, and catering.">
+  <meta name="twitter:image" content="placeholder-og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-body-glass">
+
+<header>
+  <nav class="navbar glass">
+    <img src="logo.jpg" class="logo-brand" alt="Timarh's Cuisines logo">
+    <div class="nav-icons" aria-label="Quick menu links">
+      <a href="home.html" title="Home"><i class="fas fa-house"></i></a>
+      <a href="about.html" title="About"><i class="fas fa-circle-info"></i></a>
+      <a href="menu.html" title="Menu"><i class="fas fa-utensils"></i></a>
+      <a href="gallery.html" title="Gallery"><i class="fas fa-images"></i></a>
+      <a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a>
+    </div>
+    <button class="hamburger">☰</button>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="container section">
+  <div class="text-center" style="margin-bottom: var(--space-5);">
+    <span class="hero-subtitle" style="color: var(--brand);">GET IN TOUCH</span>
+    <h1>Let's Create Something Delicious</h1>
+    <p class="muted">Whether it's a grand wedding or an intimate gift, we're here to help.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-sidebar">
+      <div class="contact-method-card glass">
+        <i class="fas fa-envelope icon-box"></i>
+        <div>
+          <h4>Email Us</h4>
+          <p id="contact-email">Fibrahim1810@gmail.com</p>
+          <button class="copy-btn" data-copy="Fibrahim1810@gmail.com"><i class="far fa-copy"></i> Copy</button>
+        </div>
+      </div>
+
+      <div class="contact-method-card glass">
+        <i class="fab fa-whatsapp icon-box"></i>
+        <div>
+          <h4>WhatsApp Chat</h4>
+          <p id="contact-phone">08104706237</p>
+          <button class="copy-btn" data-copy="08104706237"><i class="far fa-copy"></i> Copy</button>
+        </div>
+      </div>
+
+      <div class="contact-method-card glass">
+        <i class="fas fa-location-dot icon-box"></i>
+        <div>
+          <h4>Service Areas</h4>
+          <p>Abuja • Kaduna • Lagos</p>
+        </div>
+      </div>
+
+      <div class="contact-map glass">
+        <!-- Stylized Map Placeholder -->
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <p>Premium Delivery Available</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-container glass-premium">
+      <h3>Send a Request</h3>
+      <p class="muted" style="margin-bottom: var(--space-3);">Fill out the form below and we'll reach out within 24 hours.</p>
+      <form action="https://formspree.io/f/myourformid" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+        <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+        <select name="subject" aria-label="Interest" class="glass" style="width:100%; margin-bottom: 1rem; padding: 0.9rem;">
+          <option value="Custom Cake">Custom Cake Inquiry</option>
+          <option value="Bulk Order">Bulk/Pastry Order</option>
+          <option value="Catering">Event Catering</option>
+          <option value="Other">General Inquiry</option>
+        </select>
+        <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+        <button type="submit" class="btn-glow">Send Message</button>
+      </form>
+      <div id="contact-success" style="display: none; text-align: center; padding: var(--space-4) 0;">
+        <div class="icon-box" style="background: var(--brand-100); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3);">
+          <i class="fas fa-check" style="font-size: 1.5rem;"></i>
+        </div>
+        <h3>Message Sent!</h3>
+        <p class="muted">Thank you for reaching out to Timarh’s Cuisines. We've received your request and will get back to you within 24 hours.</p>
+        <button onclick="location.reload()" class="btn-outline" style="margin-top: var(--space-3);">Send Another Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section container glass" style="margin-top: var(--space-5);">
+  <h2 class="text-center">Frequently Asked Questions</h2>
+  <div class="grid grid-auto" style="margin-top: var(--space-4);">
+    <div>
+      <h4>How early should I order?</h4>
+      <p class="muted">For standard pastries, 24 hours is enough. For custom cakes, please give us at least 3-5 days notice.</p>
+    </div>
+    <div>
+      <h4>Do you deliver?</h4>
+      <p class="muted">Yes, we deliver across Abuja, Kaduna, and Lagos. Delivery fees vary based on location.</p>
+    </div>
+    <div>
+      <h4>Can I customize my order?</h4>
+      <p class="muted">Absolutely! We specialize in custom themes and flavors tailored to your specific needs.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="interactive-footer" role="contentinfo" aria-label="Site footer">
+  <div class="footer-inner">
+    <!-- Column 1: Brand -->
+    <div class="footer-col brand-col">
+      <img src="logo.jpg" class="footer-logo" alt="Timarh's Cuisines logo">
+      <p class="footer-description">Crafting luxury artisanal pastries and bespoke cakes since 2019. We believe in the magic of handmade indulgence.</p>
+      <div class="footer-social" aria-label="Social links">
+        <a href="https://www.instagram.com/invites/contact/?igsh=1eicpa2mt61rb&utm_content=n9icaut" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@pt_timarh" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100016958701906" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/fatima-ibrahim-6bba03352" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Navigation -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Explore</h4>
+      <ul class="footer-nav-list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="menu.html">The Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Cuisine -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Specialties</h4>
+      <ul class="footer-nav-list">
+        <li><a href="menu.html">Custom Cakes</a></li>
+        <li><a href="menu.html">Artisan Donuts</a></li>
+        <li><a href="menu.html">Savory Samosas</a></li>
+        <li><a href="menu.html">Meat Pies</a></li>
+        <li><a href="menu.html">Catering Services</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact & Hours -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Connect</h4>
+      <p>Founder: <strong>Fatima Ibrahim</strong></p>
+      <p>WhatsApp: <a href="https://wa.me/2348104706237">08104706237</a></p>
+      <p>Email: <a href="mailto:Fibrahim1810@gmail.com">Fibrahim1810@gmail.com</a></p>
+      <div class="opening-hours">
+        <h4 class="footer-heading small">Opening Hours</h4>
+        <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+        <p>Sunday: Pre-orders Only</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <small>© <span id="year"></span> Timarh’s Cuisines. All rights reserved.</small>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

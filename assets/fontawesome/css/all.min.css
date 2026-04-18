@@ -1,0 +1,16 @@
+/* Local placeholder for Font Awesome 6.4.0 CSS.
+   This file is intentionally minimal to remove external CDN calls and Tracking Prevention warnings.
+   To enable icons, download the official Font Awesome 6.4.0 assets and replace this file,
+   and add the corresponding webfonts into ../webfonts/ as referenced by the real stylesheet.
+*/
+
+/* Minimal styles to avoid layout shifts for <i class="fa ..."> elements until fonts are added */
+.fa, .fas, .far, .fab, .fal, .fat {
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  line-height: 1em;
+}
+
+/* Optional: muted color you can override in your styles */
+.fa, .fas, .far, .fab, .fal, .fat { color: inherit; }
